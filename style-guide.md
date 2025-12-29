@@ -13,22 +13,22 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Red 500: hsl(356, 100%, 66%)
-- Red 400: hsl(355, 100%, 74%)
-- Blue 900: hsl(208, 49%, 24%)
+- Primary-Red-500: hsl(356, 100%, 66%)
+- Primary-Red-400: hsl(355, 100%, 74%)
+- Primary-Blue-900: hsl(208, 49%, 24%)
 
 ### Neutral
 
-- White: hsl(0, 100%, 100%)
-- Gray 600: hsl(207, 13%, 34%)
-- Gray 900: hsl(240, 10%, 16%)
+- Neutral-White: hsl(0, 100%, 100%)
+- Neutral-Gray-600: hsl(207, 13%, 34%)
+- Neutral-Gray-900: hsl(240, 10%, 16%)
 
 ### Gradient
 
 Background gradient - intro/CTA mobile nav:
 
-- Orange 300: hsl(13, 100%, 72%)
-- Red 550: hsl(353, 100%, 62%)
+- Orange-300: hsl(13, 100%, 72%)
+- Red-550: hsl(353, 100%, 62%)
 
 Background gradient - body:
 

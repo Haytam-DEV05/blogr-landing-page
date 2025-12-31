@@ -312,7 +312,7 @@ p {
     width: 700px;
 }
 
-#company .container .row .col-2{
+#company .container .row .col-2 {
     position: absolute;
 }
 
@@ -334,6 +334,35 @@ p {
 
 /* END COMPANY */
 
+/* START FOOTER */
+footer {
+    background-color: var(--Neutral-Gray-900);
+    color: var(--Neutral-White);
+    padding: 4rem 0;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer div ul {
+    margin-top: 2rem;
+}
+
+footer div ul li {
+    margin: 1.2rem;
+}
+
+footer div ul li a {
+    color: #fefefe;
+    transition: .4s;
+}
+footer div ul li a:hover{
+    text-decoration: underline 2.2px;
+}
+
+/* END FOOTER */
 
 /* ====================== */
 /* ANIMATION */

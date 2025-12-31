@@ -198,8 +198,6 @@ p {
     line-height: 1.3;
 }
 
-#about .container {}
-
 #about .container h2 {
     font-size: 45px;
     margin-bottom: 4rem;
@@ -289,6 +287,52 @@ p {
 }
 
 /* END SECTION-BAR */
+/* START COMPANY */
+#company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#company .container .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+#company .container .row .col-1 {
+    position: absolute;
+    left: -200px;
+}
+
+#company .container .row .col-1 img {
+    width: 700px;
+}
+
+#company .container .row .col-2{
+    position: absolute;
+}
+
+#company .container .row .col-2 .content {
+    margin: 3rem 0;
+}
+
+#company .container .row .col-2 .content h3 {
+    color: var(--Primary-Blue-900);
+}
+
+#company .container .row .col-2 .content p {
+    color: var(--Neutral-Gray-600);
+    margin-top: 1.5rem;
+    letter-spacing: 1.1px;
+    line-height: 1.7;
+    max-width: 75%;
+}
+
+/* END COMPANY */
 
 
 /* ====================== */

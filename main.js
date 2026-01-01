@@ -1,5 +1,11 @@
-const row = document.querySelector('#section-bar .container .row')
+// const row = document.querySelector('#section-bar .container .row')
 
+const phone = document.querySelector(
+  '#section-bar .container .row .col:first-child'
+)
+const content = document.querySelector(
+  '#section-bar .container .row .col:last-child'
+)
 const options = {}
 
 const observer = new IntersectionObserver(
@@ -7,6 +13,8 @@ const observer = new IntersectionObserver(
     entries.forEach(entrie => {
       if (entrie.isIntersecting) {
         entrie.target.classList.add('show')
+      } else {
+        entrie.target.classList.remove('show')
       }
     })
   },
@@ -16,4 +24,5 @@ const observer = new IntersectionObserver(
   }
 )
 
-observer.observe(row)
+observer.observe(phone)
+observer.observe(content)

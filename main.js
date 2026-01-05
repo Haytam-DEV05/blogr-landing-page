@@ -1,3 +1,19 @@
+// M0BILE MENU =>
+
+const bareMenu = document.querySelector("#header nav .bare-menu") ;
+const hamburger = document.querySelector("#header nav .bare-menu .hamburger") ;
+const close = document.querySelector("#header nav .bare-menu .close")
+const ulNav = document.querySelector("#header nav .ul-nav")
+const buttons = document.querySelector("#header nav .buttons")
+
+bareMenu.addEventListener("click", () => {
+  hamburger.classList.toggle("active")
+  close.classList.toggle("active")
+  ulNav.classList.toggle("active")
+  buttons.classList.toggle("active")
+})
+
+
 // const row = document.querySelector('#section-bar .container .row')
 
 const phone = document.querySelector(

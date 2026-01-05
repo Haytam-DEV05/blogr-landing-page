@@ -149,8 +149,8 @@ p {
 }
 
 #header nav .bare-menu {
-    width: 95px;
-    height: 95px;
+    width: 45px;
+    height: 45px;
     position: relative;
 }
 
@@ -160,17 +160,66 @@ p {
     margin: auto;
     cursor: pointer;
     display: none;
-    width: 40px;
+    width: 100%;
 }
 
 @media (max-width:720px) {
+    #header .left-nav .logo {
+        margin-right: 0px;
+    }
+
     #header nav .bare-menu img.active {
         display: flex;
+    }
+
+    #header nav .bare-menu img.active:last-child {
+        animation: rotate .5s ease-in-out forwards;
     }
 
     #header nav .buttons,
     #header .left-nav .ul-nav {
         display: none;
+    }
+
+    #header nav {
+        position: relative;
+    }
+
+    #header nav .buttons.active,
+    #header .left-nav .ul-nav.active {
+        top: 100px;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        background-color: rgb(167, 165, 165);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    #header .left-nav .ul-nav.active {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    #header .left-nav .ul-nav.active li a {
+        text-align: center;
+        display: block;
+        margin: 20px 0;
+        color: var(--Primary-Blue-900);
+    }
+
+    #header nav .buttons.active {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        top: 270px;
+        border-top: 2px solid black;
+    }
+
+    #header nav .buttons.active button {
+        display: block;
+        max-width: fit-content;
+        margin: 0 auto;
     }
 }
 
@@ -213,6 +262,33 @@ p {
     #header .content-home h1 {
         text-align: center;
         font-size: 45px;
+    }
+
+    #header .content-home p {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:400px) {
+    #header .content-home h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #header .content-home p {
+        font-size: 14px;
+        margin: 1rem 0;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
     }
 }
 

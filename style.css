@@ -69,7 +69,8 @@ p {
     min-height: 100vh;
     border-bottom-left-radius: 100px;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 #header::after {
@@ -148,8 +149,8 @@ p {
 }
 
 #header nav .bare-menu {
-    width: 45px;
-    height: 45px;
+    width: 95px;
+    height: 95px;
     position: relative;
 }
 
@@ -159,18 +160,17 @@ p {
     margin: auto;
     cursor: pointer;
     display: none;
+    width: 40px;
 }
 
 @media (max-width:720px) {
     #header nav .bare-menu img.active {
-        height: 100%;
-        width: 100%;
-        display: block;
+        display: flex;
     }
 
     #header nav .buttons,
     #header .left-nav .ul-nav {
-        visibility: hidden;
+        display: none;
     }
 }
 
